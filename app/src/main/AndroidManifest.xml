@@ -13,11 +13,20 @@
         android:theme="@style/Theme.Twice"
         tools:targetApi="31">
         <activity
+            android:name=".ImageInsideActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ImageInsideMainActivity"
+            android:exported="false" />
+        <activity
             android:name=".SplashActivity"
             android:exported="true">
-            <!--SplashActivity가 다른 앱이나 시스템에서 시작되도록 하려면 AndroidManifest.xml 파일에서 해당 액티비티의 exported 속성을 true로 설정해야 합니다.
+
+            <!--
+            SplashActivity가 다른 앱이나 시스템에서 시작되도록 하려면 AndroidManifest.xml 파일에서 해당 액티비티의 exported 속성을 true로 설정해야 합니다.
             Android 12(API 레벨 31)부터는 모든 액티비티, 서비스, 리시버에 대해 exported 속성을 명시적으로 설정해야 합니다.
-            Android API레벨은 build.gradle.kts파일의 compileSdk의 숫자를 확인하면 된다.-->
+            Android API레벨은 build.gradle.kts파일의 compileSdk의 숫자를 확인하면 된다.
+            -->
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,11 +34,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>

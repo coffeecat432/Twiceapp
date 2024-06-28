@@ -5,14 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity">
+    tools:context=".ImageInsideActivity">
 
-    <!--margin: 이미지 창을 미는 것-->
-    <!--padding: 창 안의 이미지를 미는 것-->
     <ImageView
-        android:layout_margin="20dp"
-        android:padding="20dp"
-        android:src="@drawable/splash"
+        android:id="@+id/memberImageArea"
+        android:src="@drawable/member_1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
